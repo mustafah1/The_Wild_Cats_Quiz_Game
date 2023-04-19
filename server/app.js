@@ -16,12 +16,17 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/categories', (req, res) => {
-    res.send(questions);
-})
+app.get('/questions', (req, res) => {
 
-<<<<<<< HEAD
-app.get('/categories/questions', (req, res) => {
+    res.send(questions[1][1]);
+
+        // for (let i = 0; i < questions.length; i++) {
+        //    res.send(questions[i])
+        // }
+            
+        })
+
+app.get('/questions/id', (req, res) => {
 
     const randIdx = () => {
         for (let index = 0; index < questions.length; index++) {
@@ -31,7 +36,6 @@ app.get('/categories/questions', (req, res) => {
     };
     res.send(quotes[randIdx]);
 })
-=======
-module.exports = app;
 
->>>>>>> 505d02689f8b083e9b2fbf3283f1ee1098ad737d
+
+module.exports = app;
