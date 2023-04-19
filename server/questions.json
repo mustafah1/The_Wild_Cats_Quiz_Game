@@ -1,170 +1,185 @@
-[
-  [
+{
+  "categories": [
     {
-      "question": "example1",
-      "Answer": "correct1"
+      "id": "1",
+      "Category1_Example1": [
+        {
+          "question": "example1",
+          "Answer": "correct1"
+        },
+        {
+          "question": "example2",
+          "Answer": "correct2"
+        },
+        {
+          "question": "example3",
+          "Answer": "correct3"
+        },
+        {
+          "question": "example4",
+          "Answer": "correct4"
+        },
+        {
+          "question": "example5",
+          "Answer": "correct5"
+        },
+        {
+          "question": "example6",
+          "Answer": "correct6"
+        },
+        {
+          "question": "example7",
+          "Answer": "correct7"
+        },
+        {
+          "question": "example8",
+          "Answer": "correct8"
+        },
+        {
+          "question": "example9",
+          "Answer": "correct9"
+        },
+        {
+          "question": "example10",
+          "Answer": "correct10"
+        }
+      ]
     },
     {
-      "question": "example2",
-      "Answer": "correct2"
+      "id": "2",
+      "Category2_Example2": [
+        {
+          "question": "example1",
+          "Answer": "correct1"
+        },
+        {
+          "question": "example2",
+          "Answer": "correct2"
+        },
+        {
+          "question": "example3",
+          "Answer": "correct3"
+        },
+        {
+          "question": "example4",
+          "Answer": "correct4"
+        },
+        {
+          "question": "example5",
+          "Answer": "correct5"
+        },
+        {
+          "question": "example6",
+          "Answer": "correct6"
+        },
+        {
+          "question": "example7",
+          "Answer": "correct7"
+        },
+        {
+          "question": "example8",
+          "Answer": "correct8"
+        },
+        {
+          "question": "example9",
+          "Answer": "correct9"
+        },
+        {
+          "question": "example10",
+          "Answer": "correct10"
+        }
+      ]
     },
     {
-      "question": "example3",
-      "Answer": "correct3"
+      "id": "3",
+      "Category3_Example3": [
+        {
+          "question": "example1",
+          "Answer": "correct1"
+        },
+        {
+          "question": "example2",
+          "Answer": "correct2"
+        },
+        {
+          "question": "example3",
+          "Answer": "correct3"
+        },
+        {
+          "question": "example4",
+          "Answer": "correct4"
+        },
+        {
+          "question": "example5",
+          "Answer": "correct5"
+        },
+        {
+          "question": "example6",
+          "Answer": "correct6"
+        },
+        {
+          "question": "example7",
+          "Answer": "correct7"
+        },
+        {
+          "question": "example8",
+          "Answer": "correct8"
+        },
+        {
+          "question": "example9",
+          "Answer": "correct9"
+        },
+        {
+          "question": "example10",
+          "Answer": "correct10"
+        }
+      ]
     },
     {
-      "question": "example4",
-      "Answer": "correct4"
-    },
-    {
-      "question": "example5",
-      "Answer": "correct5"
-    },
-    {
-      "question": "example6",
-      "Answer": "correct6"
-    },
-    {
-      "question": "example7",
-      "Answer": "correct7"
-    },
-    {
-      "question": "example8",
-      "Answer": "correct8"
-    },
-    {
-      "question": "example9",
-      "Answer": "correct9"
-    },
-    {
-      "question": "example10",
-      "Answer": "correct10"
-    }
-  ],
-  [
-    {
-      "question": "example1",
-      "Answer": "correct1"
-    },
-    {
-      "question": "example2",
-      "Answer": "correct2"
-    },
-    {
-      "question": "example3",
-      "Answer": "correct3"
-    },
-    {
-      "question": "example4",
-      "Answer": "correct4"
-    },
-    {
-      "question": "example5",
-      "Answer": "correct5"
-    },
-    {
-      "question": "example6",
-      "Answer": "correct6"
-    },
-    {
-      "question": "example7",
-      "Answer": "correct7"
-    },
-    {
-      "question": "example8",
-      "Answer": "correct8"
-    },
-    {
-      "question": "example9",
-      "Answer": "correct9"
-    },
-    {
-      "question": "example10",
-      "Answer": "correct10"
-    }
-  ],
-  [
-    {
-      "question": "example1",
-      "Answer": "correct1"
-    },
-    {
-      "question": "example2",
-      "Answer": "correct2"
-    },
-    {
-      "question": "example3",
-      "Answer": "correct3"
-    },
-    {
-      "question": "example4",
-      "Answer": "correct4"
-    },
-    {
-      "question": "example5",
-      "Answer": "correct5"
-    },
-    {
-      "question": "example6",
-      "Answer": "correct6"
-    },
-    {
-      "question": "example7",
-      "Answer": "correct7"
-    },
-    {
-      "question": "example8",
-      "Answer": "correct8"
-    },
-    {
-      "question": "example9",
-      "Answer": "correct9"
-    },
-    {
-      "question": "example10",
-      "Answer": "correct10"
-    }
-  ],
-  [
-    {
-      "question": "example1",
-      "Answer": "correct1"
-    },
-    {
-      "question": "example2",
-      "Answer": "correct2"
-    },
-    {
-      "question": "example3",
-      "Answer": "correct3"
-    },
-    {
-      "question": "example4",
-      "Answer": "correct4"
-    },
-    {
-      "question": "example5",
-      "Answer": "correct5"
-    },
-    {
-      "question": "example6",
-      "Answer": "correct6"
-    },
-    {
-      "question": "example7",
-      "Answer": "correct7"
-    },
-    {
-      "question": "example8",
-      "Answer": "correct8"
-    },
-    {
-      "question": "example9",
-      "Answer": "correct9"
-    },
-    {
-      "question": "example10",
-      "Answer": "correct10"
+      "id": "4",
+      "Category4_Example4": [
+        {
+          "question": "example1",
+          "Answer": "correct1"
+        },
+        {
+          "question": "example2",
+          "Answer": "correct2"
+        },
+        {
+          "question": "example3",
+          "Answer": "correct3"
+        },
+        {
+          "question": "example4",
+          "Answer": "correct4"
+        },
+        {
+          "question": "example5",
+          "Answer": "correct5"
+        },
+        {
+          "question": "example6",
+          "Answer": "correct6"
+        },
+        {
+          "question": "example7",
+          "Answer": "correct7"
+        },
+        {
+          "question": "example8",
+          "Answer": "correct8"
+        },
+        {
+          "question": "example9",
+          "Answer": "correct9"
+        },
+        {
+          "question": "example10",
+          "Answer": "correct10"
+        }
+      ]
     }
   ]
-]
+}
+
