@@ -20,6 +20,7 @@ app.get('/categories', (req, res) => {
     res.send(questions);
 })
 
+<<<<<<< HEAD
 app.get('/categories/questions', (req, res) => {
 
     const randIdx = () => {
@@ -30,3 +31,7 @@ app.get('/categories/questions', (req, res) => {
     };
     res.send(quotes[randIdx]);
 })
+=======
+module.exports = app;
+
+>>>>>>> 505d02689f8b083e9b2fbf3283f1ee1098ad737d
