@@ -16,6 +16,17 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/questions', (req, res) => {
+app.get('/categories', (req, res) => {
     res.send(questions);
+})
+
+app.get('/categories/questions', (req, res) => {
+
+    const randIdx = () => {
+        for (let index = 0; index < questions.length; index++) {
+            const element = array[index];
+            
+        }
+    };
+    res.send(quotes[randIdx]);
 })
