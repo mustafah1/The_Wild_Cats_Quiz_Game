@@ -19,3 +19,6 @@ app.get('/', (req, res) => {
 app.get('/questions', (req, res) => {
     res.send(questions);
 })
+
+module.exports = app;
+
