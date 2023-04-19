@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content="the wild cats amazing quiz to help students with non-STEM subjects" /> <!--description for SEO  -->
-    <!-- <link rel="stylesheet" type="text/css" href="./assests/stylesheet.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./assests/stylesheet2.css" />
     <script defer src="index.js"></script>
     <title>The Wild Cats Quiz!</title>
 </head>
@@ -47,20 +48,37 @@
         </div>
     </section>
 
-    <section id="start_and_answers"> <!-- section to wrap start button and quiz questions-->
-        <button id="start_button">Begin <!-- this will be the start button -->
-        </button>
-        <menu> Question <!-- menu element for 4 options within-->
-            <!--<li> li elements will be 4 options, commented out for CSS formatting
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li> -->
-        </menu>
-    </section>
+    <div class="container mt-sm-5 my-1">
+        <div class="question ml-sm-5 pl-sm-5 pt-2">
+            <div class="py-2 h5"><b>Q. which option best describes your job role?</b></div>
+            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+                <label class="options">Small Business Owner or Employee
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="options">Nonprofit Owner or Employee
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="options">Journalist or Activist
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="options">Other
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="d-flex align-items-center pt-3">
+            <div id="prev">
+                <button class="btn btn-primary">Previous</button>
+            </div>
+            <div class="ml-auto mr-sm-5">
+                <button class="btn btn-success">Next</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
