@@ -4,6 +4,11 @@ body {
     background-size: cover; 
 }
 
+h1 {
+    text-align: center;
+    color: antiquewhite;
+}
+
 /* LEAVE NAV UNCOMMENTED WHEN UNCOMMENTING EVERYTHING ELSE 
 nav {
     position: fixed;
@@ -25,15 +30,16 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+
 #image_section {
     height: 300px;
 }
 
 #image_wrap {
     margin: auto;
-    background-color: #EDB115;
-    height: 100%;
-    width: 35%;
+    background-color: #E27A0B;
+    height: 110%;
+    width: 30%;
     border-radius: 30px;
     right: 400px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -50,9 +56,16 @@ nav {
 
 #intro_and_questions {
     /*background-color: red; */
-    height: 80px;
+    height: 40%;
     width: 100%;
     display: flex;
+    background-color: #E27A0B;
+    border-color: #C8AD55;
+    border-radius: 10px;
+    padding: 7px;
+    width: 20em;
+    margin: auto;
+
 }
 
 #intro_and_questions_div {
@@ -69,8 +82,10 @@ nav {
     margin: auto;
     height: 40%;
     font-size: 1.1rem;
-    background-color: #FFF3B0;
+    background-color: #E27A0B;
     border-color: #C8AD55;
-    min-width: 300px;
+    min-width: 150px;
     border-radius: 10px;
+    color: antiquewhite;
+    
 }
