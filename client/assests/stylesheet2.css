@@ -54,24 +54,6 @@ nav {
     border-radius: 30px;
 }
 
-#intro_and_questions {
-    /*background-color: red; */
-    height: 40%;
-    width: 100%;
-    display: flex;
-    background-color: #E27A0B;
-    border-color: #C8AD55;
-    border-radius: 10px;
-    padding: 7px;
-    width: 20em;
-    margin: auto;
-
-}
-
-#intro_and_questions_div {
-    margin: auto;
-}
-
 #start_and_answers {
     width: 100%;
     height: 150px;
