@@ -14,28 +14,18 @@ app.use(logger);
 app.get('/', (req, res) => {
     res.send(`Welcome to the QUIZ API! There are 4 categories available, each containig 10 questions.`);
 })
-
-
 app.get('/questions', (req, res) => {
-
-    res.send(questions[1][1]);
-
-        // for (let i = 0; i < questions.length; i++) {
-        //    res.send(questions[i])
-        // }
-            
-        })
-
-app.get('/questions/id', (req, res) => {
-
-    const randIdx = () => {
-        for (let index = 0; index < questions.length; index++) {
-            const element = array[index];
-            
-        }
-    };
-    res.send(quotes[randIdx]);
+    res.send(questions);            
 })
 
+app.get('/questions/:questionId', (req, res) => {
+    const idx = req.params.questionId
+    const question = questions[idx]
+  if(!question){
+        res.status(400).json({ "error": `No questions with the key "${idx}"`})
+    } else {
+        res.send(question)
+    }
 
+})
 module.exports = app;
