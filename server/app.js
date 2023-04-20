@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 
-const questions = require('./questions');
+const myQuestions = require('./questions');
 const logger = require('./logger');
 
 const app = express();
@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     res.send(`Welcome to the QUIZ API! There are 4 categories available, each containig 10 questions.`);
 })
 app.get('/questions', (req, res) => {
-    res.send(questions);            
+    res.send(myQuestions);            
 })
 
 app.get('/questions/:questionId', (req, res) => {
