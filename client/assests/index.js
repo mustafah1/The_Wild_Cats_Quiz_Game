@@ -1,8 +1,20 @@
+const myQuestions = require("../../server/questions");
+
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
-
+async function getQuestions(){
+    let returnedArray = [];
+    let response = await fetch("http://localhost:3002/questions");
+    let jsonResponse = await response.json()
+    for(item in jsonResponse){
+     returnedArray.push(jsonResponse[item])
+    }
+    return returnedArray;
+   }
+   
+let getQuestionsVariable = getQuestions()
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
