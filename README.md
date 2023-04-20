@@ -38,10 +38,10 @@ The aim of this quiz is to make a fun way for students to engage in non-STEM sub
 ---
 
 ## Install
--Node
--Nodemon
--Express
--CORS
+-Node 
+-Nodemon `npm i node`
+-Express `npm i express`
+-CORS `npm i CORS`
 
 ---
 
