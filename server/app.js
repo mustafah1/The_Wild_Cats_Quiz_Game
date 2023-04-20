@@ -20,7 +20,7 @@ app.get('/questions', (req, res) => {
 
 app.get('/questions/:questionId', (req, res) => {
     const idx = req.params.questionId
-    const question = questions[idx]
+    const question = myQuestions[idx]
   if(!question){
         res.status(400).json({ "error": `No questions with the key "${idx}"`})
     } else {
