@@ -40,7 +40,7 @@ nav {
     background-color: #E27A0B;
     height: 110%;
     width: 30%;
-    border-radius: 30px;
+    border-radius: 100%;
     right: 400px; /* might be able to delete this */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex; /* display:flex allows #image-wrap to stretch across screen and margin:auto to work in child element and also (#image below)*/
@@ -51,7 +51,7 @@ nav {
     margin: auto;
     height: 80%;
     width: 80%;
-    border-radius: 30px;
+    border-radius: 100%;
 }
 
 #intro_and_questions {
@@ -64,17 +64,22 @@ nav {
     border-radius: 10px;
     padding: 7px;
     width: 20em;
-    margin: auto;
-
+    margin: 50px auto;
 }
 
 #intro_and_questions_div {
-    margin:  auto;
+    margin:  150px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro_and_questions_div > p {
+    margin: 10px;
 }
 
 #start_and_answers {
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: flex;
 }
 
@@ -89,4 +94,3 @@ nav {
     color: antiquewhite;
     
 }
-
