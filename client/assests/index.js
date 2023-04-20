@@ -1,20 +1,7 @@
-const myQuestions = require("../../server/questions");
-
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
-async function getQuestions(){
-    let returnedArray = [];
-    let response = await fetch("http://localhost:3002/questions");
-    let jsonResponse = await response.json()
-    for(item in jsonResponse){
-     returnedArray.push(jsonResponse[item])
-    }
-    return returnedArray;
-   }
-   
-let getQuestionsVariable = getQuestions()
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
@@ -96,4 +83,17 @@ function showResults(questions, quizContainer, resultsContainer){
 	}
 }
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+async function getQuestions(){
+    const response = await fetch("http://localhost:3002/questions"); //getting data from API
+    const jsonResponse = await response.json() //data coming through
+    let myQuestions = [];
+   
+    for(item in jsonResponse){
+     myQuestions.push(jsonResponse[item])
+    }
+    generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+    
+   }
+   
+   
+   getQuestions()
