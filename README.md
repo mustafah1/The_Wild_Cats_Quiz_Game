@@ -1,7 +1,9 @@
 # The_Wild_Cats_Quiz_Game
 - A multiple choice quiz to help high school students engage with non-STEM subjects
 
-# Description
+---
+
+# Description and project context
 Stakeholders in high school education (teachers, parents and students) face issues in student engagement in non-STEM subjects. They faced a number of issues:
 
 - students need a well-rounded holistic approach to help skills like critical thinking
@@ -16,6 +18,16 @@ The aim of this quiz is to make a fun way for students to engage in non-STEM sub
 - frees up teachers time by not requiring their input
 - allows to student to gain in-depth knowledge of a particular topic
 
+---
+
+# How to use
+-answer the questions by selecting the radio button with the correct answer next to it
+-when all questions have been answered press the "get results" button
+-the question will turn green if correct or red if incorrect
+-a score will appear underneath the "get results" button
+
+---
+
 ## Technology used
 -Javascript
 -HTML/CSS
@@ -23,6 +35,7 @@ The aim of this quiz is to make a fun way for students to engage in non-STEM sub
 -Node
 -Github
 
+---
 
 ## Install
 -Node
@@ -30,65 +43,21 @@ The aim of this quiz is to make a fun way for students to engage in non-STEM sub
 -Express
 -CORS
 
-
-## How to use
-
-
-## Project context
-
-The software project you're working with has two parts:
-
-1. A back-end server which provides quotes on request and creates new quotes
-2. A simple front-end webpage which displays random quotes from the API when a button is clicked and allows users to create additional quotes via a form
-
-## Instructions
-
-Get the project working without any error messages and with full functionality as described below.
-
-### Server
-
-The server should be runnable with a single command. When the server is running, it should listen for requests on port 3000.
-
-The server should have the following routes and functionalities:
-
-| Route | Method | Response |
-| --- | --- | --- |
-| `/` | `GET` | Returns a string stating the number of quotes available. |
-| `/quotes` | `GET` | Returns a JSON object containing all the quotes. |
-| `/quotes` | `POST` | Accepts a JSON object and uses it to create and store a new quote. |
-| `/quotes/random` | `GET` | Returns a random quote from the collection as a JSON object. |
-| `/quotes/:id` | `GET` | Returns a JSON object representing a single quote from the collection, selected by `:id`. If the id is invalid (non-numeric or out-of-bounds), returns a JSON object explaining the problem, with `404` as the status code. |
-
-### Client
-
-The client consists of a single webpage.
-
-When the page is opened, it should look like this:
-
-![Example front-end webpage](./client-example.png)
-
-- When the "Be Inspired" button is clicked, the page should display a random quote.
-
-- No quote should be visible until the button is clicked.
-
-- When a user submits a new quote via the form, a new quote should be created and stored in the data. 
-
-- If the submission is successful, the input should clear up and an alert should appear stating "Quote added.". 
-
-- When clicking on the "Be Inspired" button, the newly created quote should be displayed at some point.
-
-Watch this [**video recording**](https://www.loom.com/share/b292735f96534977af85b3d6a1adeae3) to see the expected functionality.
-
-### README
-
-The project README should contain clear information on the following:
-
-1. How to install the required libraries
-2. How to run the server
-3. Any remaining bugs in the project
-
 ---
 
-[Back](../README.md)
+## How the code works
+-HTML and CSS style the pages
 
----
+-Javascript is used for the core functionality:
+    - showQuestions creates the questions, answers and radio boxes to insert into the HTML. A for loop iterates through the questions and a nested for in loop accesses the nested answers and creates a radio buttons for each answer. They are then combined into one HTML string and sent to the HTML
+    - showResults takes the selected radio buttons and using conditionals compares them to the API to:
+        -turn the answers red or green 
+        -show the users score
+-Express is used in the backend to interact with the API allowing javascript to access the question
+
+-Nodemon makes the page refresh automatically
+
+-CORS is for security and grants access to the page
+
+
+
