@@ -2,7 +2,19 @@
 - A multiple choice quiz to help high school students engage with non-STEM subjects
 
 # Description
+Stakeholders in high school education (teachers, parents and students) face issues in student engagement in non-STEM subjects. They faced a number of issues:
 
+- students need a well-rounded holistic approach to help skills like critical thinking
+- students don’t like relying on textbooks. They love learning lots of different topics but it feels like there’s too many topics to cover. Lessons can feel repetitive using same techniques.
+- parents find it hard to know what to focus on, their kids are overwhelmed with information and it leads to lack of enjoyment. Concerned that lots of fun is missing.
+- the focus on STEM means teachers can’t focus on non-STEM subjects (less time available). Knowledge gained is superficial back lacks depth. Also students are struggling to retain information.
+
+The aim of this quiz is to make a fun way for students to engage in non-STEM subjects for a holistic education. The quiz:
+
+- focuses on non-STEM subjects
+- doesn't rely on textbooks and focuses learning into bitesize chunks 
+- frees up teachers time by not requiring their input
+- allows to student to gain in-depth knowledge of a particular topic
 
 ## Technology used
 -Javascript
