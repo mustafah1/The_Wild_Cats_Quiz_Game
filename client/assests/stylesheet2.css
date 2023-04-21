@@ -38,6 +38,9 @@ nav {
     min-width: 150px;
     border-radius: 10px;
     color: antiquewhite;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
 }
 
 
@@ -83,6 +86,8 @@ nav {
     right: 400px; /* might be able to delete this */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #image { /* might need to delete or amend this section when image added*/
@@ -160,10 +165,17 @@ nav {
     padding: 6px;
 }
 
-.quiz_introduction {
+#submit {
+    margin: auto;
+    height: 40%;
+    font-size: 1.1rem;
+    background-color: #E27A0B;
+    border-color: #C8AD55;
+    min-width: 150px;
+    border-radius: 10px;
     color: antiquewhite;
-    font-family: 'Montserrat', sans-serif;
 }
+
 
 /* .container > p{
     font-size: 32px;

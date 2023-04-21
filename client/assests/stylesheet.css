@@ -22,6 +22,7 @@ nav {
 }
 */
 
+
 #settings {
     margin-left: 50px;
     margin-top: 20px;
@@ -70,7 +71,6 @@ nav {
     padding: 7px;
     width: 20em;
     margin: auto;
-
 }
 
 #intro_and_questions_div {
@@ -99,3 +99,4 @@ nav {
     color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
 }
+
