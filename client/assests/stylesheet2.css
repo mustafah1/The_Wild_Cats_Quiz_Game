@@ -67,6 +67,8 @@ nav {
     right: 400px; /* might be able to delete this */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex; /* display:flex allows #image-wrap to stretch across screen and margin:auto to work in child element and also (#image below)*/
+    min-width: 300px;
+    min-height: 300px;
 }
 
 #image_wrap_message{
