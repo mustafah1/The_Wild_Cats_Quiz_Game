@@ -7,11 +7,11 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     function showQuestions(questions, quizContainer){
         // we'll need a place to store the output and the answer choices
-        let output = [];
+        const output = [];
         let answers;
     
         // for each question...
-        for(var i=0; i<questions.length; i++){
+        for(let i=0; i<questions.length; i++){
             
             // first reset the list of answers
             answers = [];
@@ -47,10 +47,10 @@ function showResults(questions, quizContainer, resultsContainer){
 	
 	// keep track of user's answers
 	const userAnswer = '';
-	const numCorrect = 0;
+	let numCorrect = 0;
 	
 	// for each question...
-	for(var i=0; i<questions.length; i++){
+	for(let i=0; i<questions.length; i++){
 
 		// find selected answer
 		userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
