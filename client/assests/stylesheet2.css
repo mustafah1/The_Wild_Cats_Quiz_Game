@@ -131,14 +131,14 @@ nav {
 }
 
 .question {
-    padding: 10px; /* adds space between questions and answers */
-
+    padding: 10px;/* adds space between questions and answers */
+    font-weight: bold;
 }
 
 .answers {
     display: flex;
     align-items: center;
-    padding: 30px; /*adds more space between questions and answer*/
+    padding: 5px; /*adds more space between questions and answer*/
 }
 
 .radiobuttons{

@@ -23,7 +23,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 answers.push(
                     '<label class="radiobuttons">'
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + "   " + letter + ': '
+                        + "   " + letter.toUpperCase() + ': '
                         + questions[i].answers[letter]
                     + '</label>'
                 );
