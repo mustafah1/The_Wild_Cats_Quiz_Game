@@ -1,14 +1,14 @@
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
 
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     function showQuestions(questions, quizContainer){
         // we'll need a place to store the output and the answer choices
-        var output = [];
-        var answers;
+        let output = [];
+        let answers;
     
         // for each question...
         for(var i=0; i<questions.length; i++){
@@ -43,11 +43,11 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 function showResults(questions, quizContainer, resultsContainer){
 	
 	// gather answer containers from our quiz
-	var answerContainers = quizContainer.querySelectorAll('.answers');
+	const answerContainers = quizContainer.querySelectorAll('.answers');
 	
 	// keep track of user's answers
-	var userAnswer = '';
-	var numCorrect = 0;
+	const userAnswer = '';
+	const numCorrect = 0;
 	
 	// for each question...
 	for(var i=0; i<questions.length; i++){
