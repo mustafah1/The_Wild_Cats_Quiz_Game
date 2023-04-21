@@ -21,9 +21,9 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     
                 // ...add an html radio button
                 answers.push(
-                    '<label>'
+                    '<label class="radiobuttons">'
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
+                        + "   " + letter + ': '
                         + questions[i].answers[letter]
                     + '</label>'
                 );
@@ -31,7 +31,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     
             // add this question and its answers to the output
             output.push(
-                '<div class="question">' + questions[i].question + '</div>'
+                '<div class="question">' + (i+1) + ') '  + questions[i].question + '</div>'
                 + '<div class="answers">' + answers.join('') + '</div>'
             );
         }
