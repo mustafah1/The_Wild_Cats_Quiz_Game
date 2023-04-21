@@ -109,6 +109,19 @@ nav {
     color: antiquewhite;
     
 }
+
+#home_page {
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 40%;
+    font-size: 1.1rem;
+    background-color: #E27A0B;
+    border-color: #C8AD55;
+    min-width: 150px;
+    border-radius: 10px;
+    color: antiquewhite;
+}
 /*below is bootstrap css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
