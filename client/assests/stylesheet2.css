@@ -122,6 +122,7 @@ nav {
     min-width: 150px;
     border-radius: 10px;
     color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 /*below is bootstrap css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');

@@ -9,6 +9,7 @@ body {
 h1 {
     text-align: center;
     color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* LEAVE NAV UNCOMMENTED WHEN UNCOMMENTING EVERYTHING ELSE 
@@ -94,3 +95,7 @@ nav {
     
 }
 
+#ultimate_quiz {
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+}
