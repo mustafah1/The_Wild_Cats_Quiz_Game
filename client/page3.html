@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content="the wild cats amazing quiz to help students with non-STEM subjects" /> <!--description for SEO  -->
-    <link rel="stylesheet" type="text/css" href="./assests/stylesheet3.css" />
-    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./assests/stylesheet2.css" />
+    <script defer src="./assests/index.js"></script>
     <title>The Wild Cats Quiz!</title>
 </head>
 
@@ -15,10 +16,10 @@
 
     <nav>
         <section> <!--section for menu at top left hand corner of screen  -->
-            <menu id="settings"> <!--lmenu element used for readability in creating settings option top left corner of screen --> 
-                <!--<li>--> <!--list items for settings --> 
-                <!--</li>--> <!-- commented out for formatting --> 
-            </menu>
+            <section id="start_and_answers"> <!-- section to wrap start button and quiz questions-->
+                <button id="start_button" onclick="window.location.href='index.html';">Home Page</button>
+                
+            </section>
         </section>
         <section> <!--section for navigating through questions  --> 
             <menu> <!--menu for navigating through questions -->   
@@ -34,36 +35,17 @@
 
     <section id="image_section"> <!-- section to hold image -->
         <div id="image_wrap"> <!-- div to wrap image -->
-            <img id="image" alt="history picture"> <!-- might need to add src here -->
+            <img src="assests/historypic.jpg" id="image" alt="history picture"> <!-- might need to add src here -->
             </img>
         </div>    
     </section> 
 
-    <section id="intro_and_questions"> <!-- section to wrap introduction to quiz on page 1, quiz questions page 2, and congratulations message page 3-->
-        <div id="intro_and_questions_div"> <!-- this section will hold p elements for writing -->
-            <p id="Congratulations">
-                Congratulations!
-            </p>
-            <p>
-                Your Score is
-            </p>
-        </div>
-    </section>
-
-    <section id="start_and_answers"> <!-- section to wrap start button and quiz questions-->
-        <button id="start_button">Restart <!-- this will be the start button -->
-        </button>
-        <menu> <!-- menu element for 4 options within-->
-            <!--<li> li elements will be 4 options, commented out for CSS formatting
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li> -->
-        </menu>
-    </section>
-
+<!-- bootstrap below -->
+<div class="container mt-sm-5 my-1">
+    <div id="quiz"></div>
+    <button id="submit">Get Results</button>
+    <div id="results"></div>
+</div>
+<!-- bootstrap above -->
 </body>
 </html>

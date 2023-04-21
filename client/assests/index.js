@@ -1,20 +1,20 @@
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
+let quizContainer = document.getElementById('quiz');
+let resultsContainer = document.getElementById('results');
+let submitButton = document.getElementById('submit');
 
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     function showQuestions(questions, quizContainer){
         // we'll need a place to store the output and the answer choices
-        const output = [];
+        let output = [];
         let answers;
     
         // for each question...
         for(let i=0; i<questions.length; i++){
             
             // first reset the list of answers
-            answers = [];
+           let answers = [];
     
             // for each available answer to this question...
             for(letter in questions[i].answers){
@@ -43,10 +43,10 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 function showResults(questions, quizContainer, resultsContainer){
 	
 	// gather answer containers from our quiz
-	const answerContainers = quizContainer.querySelectorAll('.answers');
+	let answerContainers = quizContainer.querySelectorAll('.answers');
 	
 	// keep track of user's answers
-	const userAnswer = '';
+	let userAnswer = '';
 	let numCorrect = 0;
 	
 	// for each question...
@@ -84,8 +84,8 @@ function showResults(questions, quizContainer, resultsContainer){
 }
 
 async function getQuestions(){
-    const response = await fetch("http://localhost:3002/questions"); //getting data from API
-    const jsonResponse = await response.json() //data coming through
+    let response = await fetch("http://localhost:3002/questions"); //getting data from API
+    let jsonResponse = await response.json() //data coming through
     let myQuestions = [];
    
     for(item in jsonResponse){

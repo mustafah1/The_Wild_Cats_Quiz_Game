@@ -1,7 +1,8 @@
 
 body {
-    background-image: linear-gradient(45deg, #0A6763, #008080);
+    background-image: linear-gradient(100deg, #0A6763, #008080);
     background-size: cover; 
+
 }
 
 h1 {
@@ -18,6 +19,28 @@ nav {
     background-color: #E27A0B;
 }
 */
+
+
+
+.quiz {
+    position: center;
+    margin-left: 250px;
+
+}
+
+#btn-showQuestions{
+    position: center;
+    margin-left: 610px;
+    margin-top: 10px;
+    height: 40%;
+    font-size: 1.1rem;
+    background-color: #E27A0B;
+    border-color: #C8AD55;
+    min-width: 150px;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
 
 #settings {
     margin-left: 50px;
@@ -37,6 +60,7 @@ nav {
 
 #image_wrap {
     margin: auto;
+    margin-top: 30px;
     background-color: #E27A0B;
     height: 110%;
     width: 30%;
@@ -44,6 +68,20 @@ nav {
     right: 400px; /* might be able to delete this */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex; /* display:flex allows #image-wrap to stretch across screen and margin:auto to work in child element and also (#image below)*/
+}
+
+#image_wrap_message{
+    font-family: 'Arial Narrow Bold';
+    font-size: 18px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #E27A0B;
+    height: 110%;
+    width: 50%;
+    border-radius: 30px;
+    right: 400px; /* might be able to delete this */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
 }
 
 #image { /* might need to delete or amend this section when image added*/
@@ -87,7 +125,7 @@ body{
     background-color: #555;
     color: #ddd;
     border-radius: 10px;
-    padding: 20px;
+    padding: 80px;
     font-family: 'Montserrat', sans-serif;
     max-width: 700px;
 }

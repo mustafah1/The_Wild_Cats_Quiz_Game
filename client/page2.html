@@ -14,38 +14,22 @@
 
 <body>
 
-    <nav>
-        <section> <!--section for menu at top left hand corner of screen  -->
-            <menu id="settings"> <!--lmenu element used for readability in creating settings option top left corner of screen --> 
-                <!--<li>--> <!--list items for settings --> 
-                <!--</li>--> <!-- commented out for formatting --> 
-            </menu>
-        </section>
-        <section> <!--section for navigating through questions  --> 
-            <menu> <!--menu for navigating through questions -->   
-                <!--<li> --> <!--list items for clicking through questions -->                   
-                <!--</li> --> <!-- commented out for formatting --> 
-            </menu>
-        </section>
-        <section> <!--section for timer -->
-            <time> <!--time element to hold timer -->
-            </time>
-        </section>
-    </nav>
 
     <section id="image_section"> <!-- section to hold image -->
         <div id="image_wrap"> <!-- div to wrap image -->
-            <img id="image" alt="history picture"> <!-- might need to add src here -->
-            </img>
+            <img id="image" alt="history picture" src="./assests/historypic.jpg"></img>
         </div>    
     </section> 
+    </br></br>
+    <h1>Quiz</h1>
+    <section>
+    <div id="image_wrap_message">
+    <p></br>Welcome to Wild cats Quiz, where we put your History knowledge to the test. Whether it's to practice your facts, prepare for an  upcoming test or simply get an ego boost with a high score, you're in the right place!</br>
+    When you're ready click Show Questions</p>
+    </div>
+    <button id="btn-showQuestions" onclick="window.location.href='page3.html';">Show Questions</button>
+</section>
 
-<!-- bootstrap below -->
-<div class="container mt-sm-5 my-1">
-    <div id="quiz"></div>
-    <button id="submit">Get Results</button>
-    <div id="results"></div>
-</div>
-<!-- bootstrap above -->
+
 </body>
 </html>
