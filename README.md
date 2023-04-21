@@ -49,10 +49,12 @@ The aim of this quiz is to make a fun way for students to engage in non-STEM sub
 -HTML and CSS style the pages
 
 -Javascript is used for the core functionality:
+    -function is nested in async function in index.js
     - showQuestions creates the questions, answers and radio boxes to insert into the HTML. A for loop iterates through the questions and a nested for in loop accesses the nested answers and creates a radio buttons for each answer. They are then combined into one HTML string and sent to the HTML
     - showResults takes the selected radio buttons and using conditionals compares them to the API to:
         -turn the answers red or green 
         -show the users score
+
 -Express is used in the backend to interact with the API allowing javascript to access the question
 
 -Nodemon makes the page refresh automatically
