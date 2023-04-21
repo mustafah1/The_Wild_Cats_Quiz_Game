@@ -160,6 +160,11 @@ nav {
     padding: 6px;
 }
 
+.quiz_introduction {
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* .container > p{
     font-size: 32px;
 } */
