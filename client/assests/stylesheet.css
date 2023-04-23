@@ -70,7 +70,7 @@ nav {
     border-radius: 10px;
     padding: 7px;
     width: 20em;
-    margin: auto;
+    margin: 70px auto;
 }
 
 #intro_and_questions_div {
@@ -84,7 +84,7 @@ nav {
 }
 
 #start_button {
-    margin: auto;
+    margin: 5px auto;
     height: 40%;
     font-size: 1.1rem;
     background-color: #E27A0B;
@@ -92,6 +92,7 @@ nav {
     min-width: 150px;
     border-radius: 10px;
     color: antiquewhite;
+    cursor: pointer;
     
 }
 
